@@ -15,5 +15,11 @@ languages: ["pt-br", "en"]
 
 exclude_from_localizations: ["js", "img", "fonts", "font-awesome", "css"]
 
+flags:
+  - url_path: /en
+    img_path: /img/langs/usa.png
+  - url_path: /
+    img_path: /img/langs/brazil.png
+
 plugins:
   - jekyll-multiple-languages-plugin
