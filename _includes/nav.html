@@ -29,6 +29,18 @@
             </ul>
         </div> -->
         <!-- /.navbar-collapse -->
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                {% for flag in site.flags %}
+                    <li>
+                        <a class="page-scroll" href="{{ site.url }}{{ flag.url_path }}">
+                            <img width="20px" src="{{ flag.img_path }}" />
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
     <!-- /.container-fluid -->
 </nav>
